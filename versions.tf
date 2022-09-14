@@ -7,9 +7,9 @@ terraform {
       #Will allow installation of 4.15.1 and 4.15.10 but not 4.16.0
     }
   }
-  # backend "s3" {
-  #   bucket = "mybucket"
-  #   key    = "tfstate/tfstatefile"
-  #   region = "us-east-1"
-  # }
+  backend "s3" {
+    bucket = "mybucket"
+    key    = "tfstate/tfstatefile"
+    region = "us-east-1"
+  }
 } 
