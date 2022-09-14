@@ -8,7 +8,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "mybucket"
+    bucket = "revature-joser-inter-practice-dev-codepipeline-bucket"
     key    = "tfstate/tfstatefile"
     region = "us-east-1"
   }
