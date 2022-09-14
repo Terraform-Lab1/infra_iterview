@@ -49,7 +49,7 @@ resource "aws_codebuild_project" "project" {
         #buildspec = file("${path.module}/stage1-buildspec.yml")
     }
 
-    source_version = "master"
+    source_version = "main"
 
     tags = {
         env = var.env_namespace
